@@ -1,0 +1,7 @@
+las funciones y atributos que tiene el compoenntes, son las que estan e el contenedor de dicho componente.
+
+ng serve -o --watch
+
+listado = input/  output
+detalle = input / output
+crear = output

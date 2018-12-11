@@ -1,0 +1,20 @@
+<div *ngIf="!nuevoProfesor">
+    <button class="btn btn-lg btn-warning btn-block"  (click)="profesorNuevo()">Nuevo </button>    
+</div>
+
+<div *ngIf="nuevoProfesor">
+  <h2>{{nuevoProfesor.legajo}} Legajo</h2>
+  <div>
+    <label>Apellido:
+    <br/>
+      <input [(ngModel)]="nuevoProfesor.apellido" placeholder="apellido">
+    </label>
+  </div>
+  <div>
+    <label>Materia:
+      <br/>
+      <input [(ngModel)]="nuevoProfesor.materia" placeholder="materia">
+    </label>
+  </div>
+  <button class="btn btn-lg btn-success btn-block"  (click)="crearProfesor()">Crear</button>
+</div>
