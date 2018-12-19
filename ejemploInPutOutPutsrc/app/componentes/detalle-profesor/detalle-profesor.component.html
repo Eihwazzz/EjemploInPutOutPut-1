@@ -1,0 +1,15 @@
+<div *ngIf="!unProfesor">
+    <p> seleccione un profesor </p>
+</div>
+<div *ngIf="unProfesor">
+  <p>
+    {{unProfesor.materia}}
+  </p>
+  <p>
+    {{unProfesor.apellido}}
+  </p>
+  <p>
+    {{unProfesor.legajo}}
+  </p>
+  <button (click)="borrarProfesor(unProfesor)" class="btn btn-danger">Borrar</button>
+</div>

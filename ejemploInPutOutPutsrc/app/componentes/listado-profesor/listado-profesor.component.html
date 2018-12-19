@@ -1,0 +1,6 @@
+<ul class="alumnos">
+  <li *ngFor="let profesor of listadoProfesores">
+    <span class="badge">{{profesor.legajo}}</span> {{profesor.apellido}}  -{{profesor.materia}}  <button type="button" class="btn btn-info btn-circle"   (click)="mostrarDetalles(profesor)"><i class="fa fa-check"></i>
+    </button>
+  </li>
+</ul>
